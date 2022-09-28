@@ -1,0 +1,22 @@
+#include<iostream>
+//#include<math.h>
+using namespace std ;
+int main(){
+	int a;
+	cout << "To check if the number is a power of 2" << endl;
+	cin >> a;
+	int i = 0;
+	int j = 1;
+	//range of int is 0 to 2³¹ - 1
+	while(i < 31){
+		if(a == j){
+			cout << "a is a power of 2";
+			return 0;
+			}
+			j = j << 1;
+			i++;
+			
+		
+		}
+   cout << "a is not a power of 2";
+}
